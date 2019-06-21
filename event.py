@@ -1,5 +1,9 @@
+"""
+Author: Sayanta Roychowdhury
+Matriculation No: 03709791
+"""
+
 from heapq import heapify, heappush, heappop
-from random import randint
 
 
 class EventChain(object):

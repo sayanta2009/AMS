@@ -1,3 +1,7 @@
+"""
+Author: Sayanta Roychowdhury
+Matriculation No: 03709791
+"""
 from matplotlib import pyplot
 from rng import ExponentialRNS, UniformRNS
 import numpy

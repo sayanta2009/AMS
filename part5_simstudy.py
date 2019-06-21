@@ -1,3 +1,7 @@
+"""
+Author: Sayanta Roychowdhury
+Matriculation No: 03709791
+"""
 from counter import TimeIndependentCounter
 from simulation import Simulation
 from matplotlib import pyplot

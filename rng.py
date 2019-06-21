@@ -1,3 +1,7 @@
+"""
+Author: Sayanta Roychowdhury
+Matriculation No: 03709791
+"""
 import math
 from random import Random
 

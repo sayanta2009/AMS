@@ -1,3 +1,7 @@
+"""
+Author: Sayanta Roychowdhury
+Matriculation No: 03709791
+"""
 import unittest
 from event import EventChain, CustomerArrival, ServiceCompletion, SimulationTermination
 from systemstate import SystemState

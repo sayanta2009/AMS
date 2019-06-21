@@ -1,3 +1,7 @@
+"""
+Author: Sayanta Roychowdhury
+Matriculation No: 03709791
+"""
 from simstate import SimState
 from systemstate import SystemState
 from event import EventChain, CustomerArrival, SimulationTermination

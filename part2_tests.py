@@ -1,3 +1,7 @@
+"""
+Author: Sayanta Roychowdhury
+Matriculation No: 03709791
+"""
 import unittest
 from simulation import Simulation
 from systemstate import SystemState

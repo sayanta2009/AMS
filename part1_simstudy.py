@@ -1,3 +1,7 @@
+"""
+Author: Sayanta Roychowdhury
+Matriculation No: 03709791
+"""
 from simparam import SimParam
 from simulation import Simulation
 import random

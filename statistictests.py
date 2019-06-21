@@ -1,3 +1,9 @@
+"""
+Author: Sayanta Roychowdhury
+Matriculation No: 03709791
+"""
+
+
 class ChiSquare(object):
 
     def __init__(self, emp_x, emp_n, name="default"):

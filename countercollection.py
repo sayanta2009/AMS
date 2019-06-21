@@ -1,3 +1,8 @@
+"""
+Author: Sayanta Roychowdhury
+Matriculation No: 03709791
+"""
+
 from counter import TimeIndependentCrosscorrelationCounter, TimeIndependentAutocorrelationCounter
 from counter import TimeIndependentCounter, TimeDependentCounter
 from histogram import TimeIndependentHistogram, TimeDependentHistogram
