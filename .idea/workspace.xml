@@ -2,32 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7b50f42-cfa4-4f07-ae07-26379ae571b3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/DES.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DES.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/counter.py" beforeDir="false" afterPath="$PROJECT_DIR$/counter.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/countercollection.py" beforeDir="false" afterPath="$PROJECT_DIR$/countercollection.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/event.py" beforeDir="false" afterPath="$PROJECT_DIR$/event.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/finitequeue.py" beforeDir="false" afterPath="$PROJECT_DIR$/finitequeue.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/histogram.py" beforeDir="false" afterPath="$PROJECT_DIR$/histogram.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packet.py" beforeDir="false" afterPath="$PROJECT_DIR$/packet.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part1_simstudy.py" beforeDir="false" afterPath="$PROJECT_DIR$/part1_simstudy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part1_tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/part1_tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part2_simstudy.py" beforeDir="false" afterPath="$PROJECT_DIR$/part2_simstudy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part2_tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/part2_tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part3_simstudy.py" beforeDir="false" afterPath="$PROJECT_DIR$/part3_simstudy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part3_tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/part3_tests.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/part4_simstudy.py" beforeDir="false" afterPath="$PROJECT_DIR$/part4_simstudy.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/part4_tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/part4_tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part5_simstudy.py" beforeDir="false" afterPath="$PROJECT_DIR$/part5_simstudy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part5_tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/part5_tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part6_simstudy.py" beforeDir="false" afterPath="$PROJECT_DIR$/part6_simstudy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part6_tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/part6_tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rng.py" beforeDir="false" afterPath="$PROJECT_DIR$/rng.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simparam.py" beforeDir="false" afterPath="$PROJECT_DIR$/simparam.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simresult.py" beforeDir="false" afterPath="$PROJECT_DIR$/simresult.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/simstate.py" beforeDir="false" afterPath="$PROJECT_DIR$/simstate.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simulation.py" beforeDir="false" afterPath="$PROJECT_DIR$/simulation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/statistictests.py" beforeDir="false" afterPath="$PROJECT_DIR$/statistictests.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/systemstate.py" beforeDir="false" afterPath="$PROJECT_DIR$/systemstate.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,71 +20,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/part4_simstudy.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="239">
+              <caret line="95" column="24" selection-start-line="95" selection-start-column="24" selection-end-line="95" selection-end-column="24" />
+              <folding>
+                <element signature="e#64#121#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/simulation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
-              <folding>
-                <element signature="e#0#29#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="720">
+              <caret line="42" column="22" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/statistictests.py">
+        <entry file="file://$PROJECT_DIR$/simstate.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/systemstate.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
-              <folding>
-                <element signature="e#0#35#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rng.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/part5_simstudy.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
-              <folding>
-                <element signature="e#0#42#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/part5_tests.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="140">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -117,33 +60,48 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/simstate.py">
+        <entry file="file://$PROJECT_DIR$/counter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/part6_simstudy.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
+            <state relative-caret-position="5800">
+              <caret line="294" selection-start-line="294" selection-end-line="294" />
               <folding>
-                <element signature="e#0#36#0" expanded="true" />
+                <element signature="e#64#75#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/part6_tests.py">
+        <entry file="file://$PROJECT_DIR$/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
+            <state relative-caret-position="860">
+              <caret line="45" selection-start-line="45" selection-end-line="45" selection-end-column="10" />
               <folding>
-                <element signature="e#0#15#0" expanded="true" />
+                <element signature="e#0#12#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/systemstate.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1460">
+              <caret line="74" column="31" selection-start-line="74" selection-start-column="23" selection-end-line="74" selection-end-column="31" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/countercollection.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1720">
+              <caret line="88" column="20" selection-start-line="88" selection-start-column="13" selection-end-line="88" selection-end-column="20" />
+              <folding>
+                <element signature="e#65#162#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -167,6 +125,9 @@
       <find>cnt_sys_util</find>
       <find>reset</find>
       <find>SEED</find>
+      <find>count</find>
+      <find>count_packet</find>
+      <find>PAcket</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -176,11 +137,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Test.py" />
-        <option value="$PROJECT_DIR$/test.py" />
-        <option value="$PROJECT_DIR$/counter.py" />
         <option value="$PROJECT_DIR$/simresult.py" />
         <option value="$PROJECT_DIR$/simparam.py" />
-        <option value="$PROJECT_DIR$/countercollection.py" />
         <option value="$PROJECT_DIR$/event.py" />
         <option value="$PROJECT_DIR$/finitequeue.py" />
         <option value="$PROJECT_DIR$/histogram.py" />
@@ -191,17 +149,20 @@
         <option value="$PROJECT_DIR$/part2_tests.py" />
         <option value="$PROJECT_DIR$/part3_simstudy.py" />
         <option value="$PROJECT_DIR$/part3_tests.py" />
-        <option value="$PROJECT_DIR$/part4_simstudy.py" />
-        <option value="$PROJECT_DIR$/part4_tests.py" />
         <option value="$PROJECT_DIR$/part5_simstudy.py" />
         <option value="$PROJECT_DIR$/part5_tests.py" />
         <option value="$PROJECT_DIR$/part6_simstudy.py" />
         <option value="$PROJECT_DIR$/part6_tests.py" />
         <option value="$PROJECT_DIR$/rng.py" />
-        <option value="$PROJECT_DIR$/simstate.py" />
-        <option value="$PROJECT_DIR$/simulation.py" />
         <option value="$PROJECT_DIR$/statistictests.py" />
+        <option value="$PROJECT_DIR$/part4_tests.py" />
         <option value="$PROJECT_DIR$/systemstate.py" />
+        <option value="$PROJECT_DIR$/countercollection.py" />
+        <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/counter.py" />
+        <option value="$PROJECT_DIR$/simulation.py" />
+        <option value="$PROJECT_DIR$/part4_simstudy.py" />
+        <option value="$PROJECT_DIR$/simstate.py" />
       </list>
     </option>
   </component>
@@ -216,7 +177,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -224,14 +184,11 @@
               <item name="DES" type="b2602c69:ProjectViewProjectNode" />
               <item name="DES" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="DES" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -251,8 +208,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.part3_simstudy">
-    <configuration name="part3_simstudy" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.part4_simstudy">
+    <configuration name="part4_simstudy" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="DES" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -264,7 +221,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/part3_simstudy.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/part4_simstudy.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -273,7 +230,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for part1_tests.DESTest.test_system_state" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="DES" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for part4_tests.DESTest" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="DES" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -283,11 +261,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;part1_tests.DESTest.test_system_state&quot;" />
+      <option name="_new_target" value="&quot;part4_tests.DESTest&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for part2_tests.DESTestExtended" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for part4_tests.DESTest.test_auto_correlation" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="DES" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -297,11 +275,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;part2_tests.DESTestExtended&quot;" />
+      <option name="_new_target" value="&quot;part4_tests.DESTest.test_auto_correlation&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for part2_tests.DESTestExtended.test_do_simulation" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for part4_tests.DESTest.test_cross_correlation" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="DES" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -311,31 +289,17 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;part2_tests.DESTestExtended.test_do_simulation&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Unittests for part3_tests.DESTestRNG.test_system_utilization" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="DES" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;part3_tests.DESTestRNG.test_system_utilization&quot;" />
+      <option name="_new_target" value="&quot;part4_tests.DESTest.test_cross_correlation&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.part3_simstudy" />
-        <item itemvalue="Python tests.Unittests for part3_tests.DESTestRNG.test_system_utilization" />
-        <item itemvalue="Python tests.Unittests for part1_tests.DESTest.test_system_state" />
-        <item itemvalue="Python tests.Unittests for part2_tests.DESTestExtended" />
-        <item itemvalue="Python tests.Unittests for part2_tests.DESTestExtended.test_do_simulation" />
+        <item itemvalue="Python.part4_simstudy" />
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python tests.Unittests for part4_tests.DESTest" />
+        <item itemvalue="Python tests.Unittests for part4_tests.DESTest.test_cross_correlation" />
+        <item itemvalue="Python tests.Unittests for part4_tests.DESTest.test_auto_correlation" />
       </list>
     </recent_temporary>
   </component>
@@ -353,47 +317,47 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_part3_tests_DESTestRNG_test_system_utilization - 2019.06.18 at 00h 42m 55s.xml">
-      <configuration name="Unittests for part3_tests.DESTestRNG.test_system_utilization" configurationId="tests" />
+    <history-entry file="Unittests_for_part4_tests_DESTest_test_auto_correlation - 2019.06.22 at 01h 03m 00s.xml">
+      <configuration name="Unittests for part4_tests.DESTest.test_auto_correlation" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_part3_tests_DESTestRNG_test_system_utilization - 2019.06.18 at 00h 45m 06s.xml">
-      <configuration name="Unittests for part3_tests.DESTestRNG.test_system_utilization" configurationId="tests" />
+    <history-entry file="Unittests_for_part4_tests_DESTest_test_auto_correlation - 2019.06.22 at 01h 03m 59s.xml">
+      <configuration name="Unittests for part4_tests.DESTest.test_auto_correlation" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_part3_tests_DESTestRNG_test_system_utilization - 2019.06.18 at 00h 50m 43s.xml">
-      <configuration name="Unittests for part3_tests.DESTestRNG.test_system_utilization" configurationId="tests" />
+    <history-entry file="Unittests_for_part4_tests_DESTest_test_auto_correlation - 2019.06.22 at 01h 09m 17s.xml">
+      <configuration name="Unittests for part4_tests.DESTest.test_auto_correlation" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_part3_tests_DESTestRNG_test_system_utilization - 2019.06.18 at 00h 52m 42s.xml">
-      <configuration name="Unittests for part3_tests.DESTestRNG.test_system_utilization" configurationId="tests" />
+    <history-entry file="Unittests_for_part4_tests_DESTest_test_auto_correlation - 2019.06.22 at 01h 10m 44s.xml">
+      <configuration name="Unittests for part4_tests.DESTest.test_auto_correlation" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_part3_tests_DESTestRNG_test_system_utilization - 2019.06.18 at 00h 53m 31s.xml">
-      <configuration name="Unittests for part3_tests.DESTestRNG.test_system_utilization" configurationId="tests" />
+    <history-entry file="Unittests_for_part4_tests_DESTest_test_auto_correlation - 2019.06.22 at 01h 11m 51s.xml">
+      <configuration name="Unittests for part4_tests.DESTest.test_auto_correlation" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_part3_tests_DESTestRNG_test_system_utilization - 2019.06.18 at 00h 54m 44s.xml">
-      <configuration name="Unittests for part3_tests.DESTestRNG.test_system_utilization" configurationId="tests" />
+    <history-entry file="Unittests_for_part4_tests_DESTest_test_auto_correlation - 2019.06.22 at 01h 12m 41s.xml">
+      <configuration name="Unittests for part4_tests.DESTest.test_auto_correlation" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_part3_tests_DESTestRNG_test_system_utilization - 2019.06.18 at 00h 58m 17s.xml">
-      <configuration name="Unittests for part3_tests.DESTestRNG.test_system_utilization" configurationId="tests" />
+    <history-entry file="Unittests_for_part4_tests_DESTest_test_cross_correlation - 2019.06.22 at 01h 39m 42s.xml">
+      <configuration name="Unittests for part4_tests.DESTest.test_cross_correlation" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_part3_tests_DESTestRNG_test_system_utilization - 2019.06.18 at 00h 59m 40s.xml">
-      <configuration name="Unittests for part3_tests.DESTestRNG.test_system_utilization" configurationId="tests" />
+    <history-entry file="Unittests_for_part4_tests_DESTest - 2019.06.22 at 02h 21m 57s.xml">
+      <configuration name="Unittests for part4_tests.DESTest" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_part3_tests_DESTestRNG_test_system_utilization - 2019.06.18 at 01h 00m 33s.xml">
-      <configuration name="Unittests for part3_tests.DESTestRNG.test_system_utilization" configurationId="tests" />
+    <history-entry file="Unittests_for_part4_tests_DESTest - 2019.06.22 at 02h 22m 32s.xml">
+      <configuration name="Unittests for part4_tests.DESTest" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_part3_tests_DESTestRNG_test_system_utilization - 2019.06.18 at 11h 37m 18s.xml">
-      <configuration name="Unittests for part3_tests.DESTestRNG.test_system_utilization" configurationId="tests" />
+    <history-entry file="Unittests_for_part4_tests_DESTest - 2019.06.22 at 02h 27m 10s.xml">
+      <configuration name="Unittests for part4_tests.DESTest" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22457068" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22457068" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.17538896" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3536068" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39886847" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -407,12 +371,12 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24966975" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22457068" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3026874" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3536068" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39886847" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -426,6 +390,17 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout-to-restore>
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/counter.py</url>
+          <line>4</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$USER_HOME$/.PyCharmCE2019.1/system/python_stubs/595015820/__builtin__.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -435,45 +410,10 @@
       </provider>
     </entry>
     <entry file="file://C:/Python27/Lib/random.py" />
-    <entry file="file://$PROJECT_DIR$/test.py" />
-    <entry file="file://$PROJECT_DIR$/counter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" selection-end-line="3" selection-end-column="3" />
-          <folding>
-            <element signature="e#12#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/simresult.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/countercollection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#97#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/event.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/finitequeue.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -484,13 +424,6 @@
           <folding>
             <element signature="e#0#12#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -554,20 +487,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/part4_simstudy.py">
+    <entry file="file://$PROJECT_DIR$/rng.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/part4_tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -575,9 +498,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -585,9 +505,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -595,9 +512,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -605,43 +519,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rng.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simparam.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simstate.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simulation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -652,12 +529,104 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/part4_tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1580">
+          <caret line="79" column="23" selection-start-line="79" selection-start-column="20" selection-end-line="79" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/finitequeue.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/event.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-191">
+          <caret line="133" column="14" selection-start-line="133" selection-start-column="14" selection-end-line="133" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simulation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="42" column="22" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simparam.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/counter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5800">
+          <caret line="294" selection-start-line="294" selection-end-line="294" />
+          <folding>
+            <element signature="e#64#75#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="860">
+          <caret line="45" selection-start-line="45" selection-end-line="45" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/systemstate.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
+        <state relative-caret-position="1460">
+          <caret line="74" column="31" selection-start-line="74" selection-start-column="23" selection-end-line="74" selection-end-column="31" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/countercollection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1720">
+          <caret line="88" column="20" selection-start-line="88" selection-start-column="13" selection-end-line="88" selection-end-column="20" />
+          <folding>
+            <element signature="e#65#162#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simstate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/part4_simstudy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="95" column="24" selection-start-line="95" selection-start-column="24" selection-end-line="95" selection-end-column="24" />
+          <folding>
+            <element signature="e#64#121#0" expanded="true" />
           </folding>
         </state>
       </provider>

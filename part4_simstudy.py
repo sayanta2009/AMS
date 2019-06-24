@@ -2,17 +2,41 @@
 Author: Sayanta Roychowdhury
 Matriculation No: 03709791
 """
+from counter import TimeIndependentAutocorrelationCounter
+from simulation import Simulation
+import matplotlib.pyplot as plt
+import matplotlib
+matplotlib.rcParams['figure.figsize'] = (10, 30)
+
 """
 This file should be used to keep all necessary code that is used for the verification and simulation section in part 4
 of the programming assignment. It contains tasks 4.2.1, 4.3.1 and 4.3.2.
 """
+
 
 def task_4_2_1():
     """
     Execute exercise 4.2.1, which is basically just a test for the auto correlation.
     """
     # TODO Task 4.2.1: Your code goes here
-    pass
+    counter = TimeIndependentAutocorrelationCounter(name="Demo Auto Correlation Counter", max_lag=4)
+    for i in range(1000):
+        if i % 2 == 0:
+            counter.count(1)
+        else:
+            counter.count(-1)
+    print "---First sequence----"
+    counter.report()
+
+    counter.reset()
+    for i in range(1000):
+        counter.count(1)
+        counter.count(1)
+        counter.count(-1)
+
+    print "---Second sequence----"
+    counter.report()
+
 
 def task_4_3_1():
     """
@@ -21,7 +45,17 @@ def task_4_3_1():
     SIM_TIME is set higher in order to avoid a large influence of startup effects
     """
     # TODO Task 4.3.1: Your code goes here
-    pass
+    sim = Simulation()
+    sim.sim_param.S = 10000
+    sim.sim_param.SIM_TIME = 10000000
+
+    for rho in [0.01, 0.5, 0.8, 0.95]:
+        print"--------Simulation with Rho:" + str(rho) + "--------"
+        sim.sim_param.RHO = rho
+        sim.reset()
+        sim.do_simulation()
+        sim.counter_collection.report()
+
 
 def task_4_3_2():
     """
@@ -31,7 +65,68 @@ def task_4_3_2():
     The simulation parameters are the same as in task_4_3_1()
     """
     # TODO Task 4.3.2: Your code goes here
-    pass
+    sim = Simulation()
+    counter_one = sim.counter_collection.cnt_iat_st
+    counter_two = sim.counter_collection.cnt_st_syst
+    sim.sim_param.S = 10000
+    sim.sim_param.SIM_TIME = 10000000
+
+    sim.sim_param.RHO = 0.01
+    sim.do_simulation()
+    plt.subplots_adjust(hspace=0.6)
+
+    plt.subplot(4, 2, 1)
+    plt.plot(counter_one.valueX.get_values(), counter_one.valueY.get_values(), 'o')
+    plt.title("RHO: 0.01 -- IAT VS Service Time")
+
+    plt.subplot(4, 2, 2)
+    plt.plot(counter_two.valueX.get_values(), counter_two.valueY.get_values(), 'o')
+    plt.title("RHO: 0.01 -- Service Time VS System Time")
+
+    sim.reset()
+    counter_one = sim.counter_collection.cnt_iat_st
+    counter_two = sim.counter_collection.cnt_st_syst
+    sim.sim_param.RHO = 0.5
+    sim.do_simulation()
+
+    plt.subplot(4, 2, 3)
+    plt.plot(counter_one.valueX.get_values(), counter_one.valueY.get_values(), 'o')
+    plt.title("RHO: 0.5 -- IAT VS Service Time")
+
+    plt.subplot(4, 2, 4)
+    plt.plot(counter_two.valueX.get_values(), counter_two.valueY.get_values(), 'o')
+    plt.title("RHO: 0.5 -- Service Time VS System Time")
+
+    sim.reset()
+    counter_one = sim.counter_collection.cnt_iat_st
+    counter_two = sim.counter_collection.cnt_st_syst
+    sim.sim_param.RHO = 0.8
+    sim.do_simulation()
+
+    plt.subplot(4, 2, 5)
+    plt.plot(counter_one.valueX.get_values(), counter_one.valueY.get_values(), 'o')
+    plt.title("RHO: 0.8 -- IAT VS Service Time")
+
+    plt.subplot(4, 2, 6)
+    plt.plot(counter_two.valueX.get_values(), counter_two.valueY.get_values(), 'o')
+    plt.title("RHO: 0.8 -- Service Time VS System Time")
+
+    sim.reset()
+    counter_one = sim.counter_collection.cnt_iat_st
+    counter_two = sim.counter_collection.cnt_st_syst
+    sim.sim_param.RHO = 0.95
+    sim.do_simulation()
+
+    plt.subplot(4, 2, 7)
+    plt.plot(counter_one.valueX.get_values(), counter_one.valueY.get_values(), 'o')
+    plt.title("RHO: 0.95 -- IAT VS Service Time")
+
+    plt.subplot(4, 2, 8)
+    plt.plot(counter_two.valueX.get_values(), counter_two.valueY.get_values(), 'o')
+    plt.title("RHO: 0.95 -- Service Time VS System Time")
+
+    plt.show()
+
 
 def task_4_3_3():
     """
@@ -44,7 +139,7 @@ def task_4_3_3():
     pass
 
 if __name__ == '__main__':
-    task_4_2_1()
-    task_4_3_1()
+    #task_4_2_1()
+    #task_4_3_1()
     task_4_3_2()
-    task_4_3_3()
+    #task_4_3_3()

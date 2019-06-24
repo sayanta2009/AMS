@@ -22,7 +22,7 @@ class SimState(object):
         self.num_packets = 0
         self.num_blocked_packets = 0
 
-    def packet_accepted(self) :
+    def packet_accepted(self):
         """
         Count a packet that has been accepted by the system (queue or server).
         """

@@ -4,6 +4,7 @@ Matriculation No: 03709791
 """
 import math
 import numpy
+from collections import deque
 import scipy
 import scipy.stats
 
@@ -93,6 +94,9 @@ class TimeIndependentCounter(Counter):
         """
         self.values.append(args[0])
 
+    def reset(self):
+        self.values = []
+
     def get_mean(self):
         """
         Return the mean value of the internal array.
@@ -114,6 +118,9 @@ class TimeIndependentCounter(Counter):
         """
         # TODO Task 2.3.1: Your code goes here
         return numpy.std(self.values, ddof=1)
+
+    def get_values(self):
+        return self.values
 
     def report_confidence_interval(self, alpha=0.05, print_report=True):
         """
@@ -235,7 +242,11 @@ class TimeIndependentCrosscorrelationCounter(TimeIndependentCounter):
         """
         super(TimeIndependentCrosscorrelationCounter, self).__init__(name)
         # TODO Task 4.1.1: Your code goes here
-        pass
+        self.valueX = TimeIndependentCounter()
+        self.valueY = TimeIndependentCounter()
+        self.meanX = 0
+        self.meanY = 0
+        self.value_xy = TimeIndependentCounter()
 
     def reset(self):
         """
@@ -243,14 +254,18 @@ class TimeIndependentCrosscorrelationCounter(TimeIndependentCounter):
         """
         TimeIndependentCounter.reset(self)
         # TODO Task 4.1.1: Your code goes here
-        pass
+        self.valueX = TimeIndependentCounter()
+        self.valueY = TimeIndependentCounter()
+        self.value_xy = TimeIndependentCounter()
 
     def count(self, x, y):
         """
         Count two values for the correlation between them. They are added to the two internal arrays.
         """
         # TODO Task 4.1.1: Your code goes here
-        pass
+        self.valueX.count(x)
+        self.valueY.count(y)
+        self.value_xy.count(x*y)
 
     def get_cov(self):
         """
@@ -258,7 +273,9 @@ class TimeIndependentCrosscorrelationCounter(TimeIndependentCounter):
         :return: cross covariance
         """
         # TODO Task 4.1.1: Your code goes here
-        pass
+        self.meanX = self.valueX.get_mean()
+        self.meanY = self.valueY.get_mean()
+        return self.value_xy.get_mean() - self.meanX * self.meanY
 
     def get_cor(self):
         """
@@ -266,11 +283,13 @@ class TimeIndependentCrosscorrelationCounter(TimeIndependentCounter):
         :return: cross correlation
         """
         # TODO Task 4.1.1: Your code goes here
-        pass
+        return self.get_cov() / math.sqrt(self.valueX.get_var()
+                                          * self.valueY.get_var())
 
     def report(self):
         """
         Print a report string for the TICCC.
+
         """
         print "Name: " + self.name + "; covariance = " + str(self.get_cov()) + "; correlation = " + str(self.get_cor())
 
@@ -289,7 +308,11 @@ class TimeIndependentAutocorrelationCounter(TimeIndependentCounter):
         """
         super(TimeIndependentAutocorrelationCounter, self).__init__(name)
         # TODO Task 4.1.2: Your code goes here
-        pass
+        self.value = TimeIndependentCounter()
+        self.value_shifted = TimeIndependentCounter()
+        self.product = TimeIndependentCounter()
+        self.max_lag = 0
+        self.set_max_lag(max_lag)
 
     def reset(self):
         """
@@ -297,14 +320,16 @@ class TimeIndependentAutocorrelationCounter(TimeIndependentCounter):
         """
         TimeIndependentCounter.reset(self)
         # TODO Task 4.1.2: Your code goes here
-        pass
+        self.value = TimeIndependentCounter()
+        self.value_shifted = TimeIndependentCounter()
+        self.product = TimeIndependentCounter()
 
     def count(self, x):
         """
         Add new element x to counter.
         """
         # TODO Task 4.1.2: Your code goes here
-        pass
+        self.value.count(x)
 
     def get_auto_cov(self, lag):
         """
@@ -312,7 +337,16 @@ class TimeIndependentAutocorrelationCounter(TimeIndependentCounter):
         :return: auto covariance
         """
         # TODO Task 4.1.2: Your code goes here
-        pass
+        x = self.value.get_values()
+        y = deque(x)
+        y.rotate(lag)
+        self.value_shifted.reset()
+        self.product.reset()
+        for i in range(len(y)):
+            self.value_shifted.count(y[i])
+            self.product.count(x[i] * y[i])
+
+        return self.product.get_mean() - self.value.get_mean() * self.value_shifted.get_mean()
 
     def get_auto_cor(self, lag):
         """
@@ -320,19 +354,22 @@ class TimeIndependentAutocorrelationCounter(TimeIndependentCounter):
         :return: auto correlation
         """
         # TODO Task 4.1.2: Your code goes here
-        pass
+        return self.get_auto_cov(lag) / math.sqrt(self.value.get_var()
+                                                  * self.value_shifted.get_var())
 
     def set_max_lag(self, max_lag):
         """
         Change maximum lag. Cycle length is set to max_lag + 1.
         """
         # TODO Task 4.1.2: Your code goes here
-        pass
+        self.max_lag = max_lag
 
     def report(self):
         """
         Print report for auto correlation counter.
         """
         print "Name: " + self.name
+        print self.max_lag
         for i in range(0, self.max_lag+1):
-            print "Lag = " + str(i) + "; covariance = " + str(self.get_auto_cov(i)) + "; correlation = " + str(self.get_auto_cor(i))
+            print "Lag = " + str(i) + "; covariance = " + str(self.get_auto_cov(i)) + "; correlation = " \
+                  + str(self.get_auto_cor(i))

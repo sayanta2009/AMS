@@ -1,9 +1,6 @@
-"""
-Author: Sayanta Roychowdhury
-Matriculation No: 03709791
-"""
 import unittest
 from counter import TimeIndependentAutocorrelationCounter, TimeIndependentCrosscorrelationCounter
+
 
 class DESTest(unittest.TestCase):
 
@@ -44,7 +41,7 @@ class DESTest(unittest.TestCase):
             self.assertAlmostEqual(tiacc.get_auto_cov(lag), results_cov[lag], delta=.05,
                                msg="Error in TimeIndependentAutocorrelationCounter. Covariance calculation is wrong.")
             self.assertAlmostEqual(tiacc.get_auto_cor(lag), results_cor[lag], delta=.05,
-                               msg="Error in TimeIndependentAutocorrelationCounter. Correlation calculation is wrong.")
+                              msg="Error in TimeIndependentAutocorrelationCounter. Correlation calculation is wrong.")
 
 if __name__ == '__main__':
     unittest.main()

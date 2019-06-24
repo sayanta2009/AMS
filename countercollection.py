@@ -39,14 +39,13 @@ class CounterCollection(object):
         # blocking probability
         self.cnt_bp = TimeIndependentCounter("bp")
         self.hist_bp = TimeIndependentHistogram(self.sim, "bp")
-
+        """
         # correlations
         self.cnt_iat_wt = TimeIndependentCrosscorrelationCounter("inter-arrival time vs. waiting time")
         self.cnt_iat_st = TimeIndependentCrosscorrelationCounter("inter-arrival time vs. service time")
         self.cnt_iat_syst = TimeIndependentCrosscorrelationCounter("inter-arrival time vs. system time")
         self.cnt_st_syst = TimeIndependentCrosscorrelationCounter("service time vs. system time")
         self.acnt_wt = TimeIndependentAutocorrelationCounter("waiting time with lags 1 to 20", max_lag=20)
-        """
 
     def reset(self):
         """
@@ -59,15 +58,16 @@ class CounterCollection(object):
         self.hist_ql.reset()
 
         self.cnt_sys_util.reset()
-        """
-        self.cnt_bp.reset()
-        self.hist_bp.reset()
-
         self.cnt_iat_wt.reset()
         self.cnt_iat_st.reset()
         self.cnt_iat_syst.reset()
         self.cnt_st_syst.reset()
         self.acnt_wt.reset()
+
+        """
+        self.cnt_bp.reset()
+        self.hist_bp.reset()
+
         """
 
     def report(self):
@@ -75,19 +75,20 @@ class CounterCollection(object):
         Calls the report function of the counters and histograms.
         Can be adapted, such that not all reports are printed
         """
-        self.cnt_wt.report()
-        self.hist_wt.report()
+        # self.cnt_wt.report()
+        # self.hist_wt.report()
 
-        self.cnt_ql.report()
-        self.hist_ql.report()
+        # self.cnt_ql.report()
+        # self.hist_ql.report()
 
-        self.cnt_sys_util.report()
-        """
+        # self.cnt_sys_util.report()
         self.cnt_iat_wt.report()
         self.cnt_iat_st.report()
         self.cnt_iat_syst.report()
         self.cnt_st_syst.report()
         self.acnt_wt.report()
+
+        """
         """
 
     def count_packet(self, packet):
@@ -96,13 +97,11 @@ class CounterCollection(object):
         """
         self.cnt_wt.count(packet.get_waiting_time())
         self.hist_wt.count(packet.get_waiting_time())
-        """
         self.cnt_iat_wt.count(packet.get_interarrival_time(), packet.get_waiting_time())
         self.cnt_iat_st.count(packet.get_interarrival_time(), packet.get_service_time())
         self.cnt_iat_syst.count(packet.get_interarrival_time(), packet.get_system_time())
         self.cnt_st_syst.count(packet.get_service_time(), packet.get_system_time())
         self.acnt_wt.count(packet.get_waiting_time())
-        """
 
     def count_queue(self):
         """
