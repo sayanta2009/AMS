@@ -136,10 +136,37 @@ def task_4_3_3():
     Note, that for some seeds with rho=0.01 and N=100, the variance of the auto covariance is 0 and returns an error.
     """
     # TODO Task 4.3.3: Your code goes here
-    pass
+    sim = Simulation()
+    sim.sim_param.S = 10000
+    run_simulation(sim, 100, 1)
+    run_simulation(sim, 10000, 2)
+    plt.show()
+
+
+def run_simulation(sim, n, plot_section):
+    for rho in [0.01, 0.5, 0.8, 0.95]:
+        sim.sim_param.RHO = rho
+        sim.reset()
+        sim.do_simulation_n_limit(100)
+
+        aut_cor_list = []
+        lag_list = range(1, 21)
+
+        for lag in lag_list:
+            aut_cor_list.append(sim.counter_collection.acnt_wt.get_auto_cor(lag))
+
+        plt.subplot(2, 1, plot_section)
+        plt.plot(lag_list, aut_cor_list, label="Rho: " + str(rho))
+
+    title = "Auto-correlation vs Lag size :: For " + str(n) + " simulation runs"
+    plt.title(title)
+    plt.xlabel("Lag")
+    plt.ylabel("Auto-correlation")
+    plt.legend(loc='upper right')
+
 
 if __name__ == '__main__':
     #task_4_2_1()
-    #task_4_3_1()
-    task_4_3_2()
-    #task_4_3_3()
+    # task_4_3_1()
+    # task_4_3_2()
+    task_4_3_3()

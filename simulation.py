@@ -95,11 +95,17 @@ class Simulation(object):
 
         # start simulation (run)
         while not self.sim_state.stop:
-
             # TODO Task 4.3.2: Your code goes here
             # TODO Task 5.2.2: Your code goes here
-            pass
-
+            e = self.event_chain.remove_oldest_event()
+            if e:
+                self.sim_state.now = e.timestamp
+                self.counter_collection.count_queue()
+                e.process()
+                if self.sim_state.num_packets == n:
+                    self.sim_state.stop = True
+            else:
+                self.sim_state.stop = True
         # gather results for sim_result object
         self.sim_result.gather_results()
         return self.sim_result
