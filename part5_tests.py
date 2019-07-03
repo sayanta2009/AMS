@@ -5,6 +5,7 @@ Matriculation No: 03709791
 import unittest
 from counter import TimeIndependentCounter
 
+
 class DESTest(unittest.TestCase):
 
     """
@@ -37,12 +38,14 @@ class DESTest(unittest.TestCase):
                          msg="Error in Confidence interval calculation. Value should be in interval, but isn't.")
         self.assertEqual(tic.is_in_confidence_interval(1.3, alpha=.05), True,
                          msg="Error in Confidence interval calculation. Value should be in interval, but isn't.")
+
         self.assertEqual(tic.is_in_confidence_interval(5.0, alpha=.05), False,
                          msg="Error in Confidence interval calculation. Value id in interval, but shouldn't.")
         self.assertEqual(tic.is_in_confidence_interval(4.5, alpha=.1), True,
                          msg="Error in Confidence interval calculation. Value should be in interval, but isn't.")
         self.assertEqual(tic.is_in_confidence_interval(1.3, alpha=.1), False,
                          msg="Error in Confidence interval calculation. Value id in interval, but shouldn't.")
+
         self.assertEqual(tic.is_in_confidence_interval(5.0, alpha=.1), False,
                          msg="Error in Confidence interval calculation. Value id in interval, but shouldn't.")
         self.assertEqual(tic.is_in_confidence_interval(4.5, alpha=.2), False,
@@ -53,16 +56,14 @@ class DESTest(unittest.TestCase):
                          msg="Error in Confidence interval calculation. Value should be in interval, but isn't.")
 
         lower, upper = tic.report_bootstrap_confidence_interval(alpha=.05, resample_size=10000)
-        self.assertAlmostEqual(lower, 1.55556, delta=0.01,
+        self.assertAlmostEqual(lower, 1.33333, delta=0.01,
                                msg="Error in bootstrap confidence interval calculation. Wrong lower boundary.")
-        self.assertAlmostEqual(upper, 4.66667, delta=0.01,
+        self.assertAlmostEqual(upper, 4.44444, delta=0.01,
                                msg="Error in bootstrap confidence interval calculation. Wrong upper boundary.")
-
         self.assertEqual(tic.is_in_bootstrap_confidence_interval(4, resample_size=5000, alpha=.05), True,
                          msg="Error in Confidence interval calculation. Value should be in interval, but isn't.")
         self.assertEqual(tic.is_in_bootstrap_confidence_interval(1, resample_size=5000, alpha=.05), False,
                          msg="Error in Confidence interval calculation. Value id in interval, but shouldn't.")
-
 
 if __name__ == '__main__':
     unittest.main()

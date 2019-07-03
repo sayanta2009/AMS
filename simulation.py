@@ -82,7 +82,7 @@ class Simulation(object):
         self.sim_result.gather_results()
         return self.sim_result
 
-    def do_simulation_n_limit(self, n):
+    def do_simulation_n_limit(self, n, new_batch=False):
         """
         Call this function, if the simulation should stop after a given number of packets
         Do one simulation run. Initialize simulation and create first event.
@@ -91,7 +91,8 @@ class Simulation(object):
         :return: SimResult object
         """
         # insert first event
-        self.event_chain.insert(CustomerArrival(self, 0))
+        if not new_batch:
+            self.event_chain.insert(CustomerArrival(self, 0))
 
         # start simulation (run)
         while not self.sim_state.stop:

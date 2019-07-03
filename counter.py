@@ -131,7 +131,10 @@ class TimeIndependentCounter(Counter):
         :return: half width of confidence interval h
         """
         # TODO Task 5.1.1: Your code goes here
-        pass
+        n = len(self.values)
+        stand_err = math.sqrt(self.get_var() / n)
+        conf_int = stand_err * scipy.stats.t.ppf(1 - alpha/2.0, n - 1)
+        return conf_int
 
     def is_in_confidence_interval(self, x, alpha=0.05):
         """
@@ -141,7 +144,13 @@ class TimeIndependentCounter(Counter):
         :return: true, if sample is in confidence interval
         """
         # TODO Task 5.1.1: Your code goes here
-        pass
+        lower_endpoint = self.get_mean() - self.report_confidence_interval(alpha)
+        upper_endpoint = self.get_mean() + self.report_confidence_interval(alpha)
+
+        if lower_endpoint <= x <= upper_endpoint:
+            return True
+        else:
+            return False
 
     def report_bootstrap_confidence_interval(self, alpha=0.05, resample_size=5000, print_report=True):
         """
@@ -153,7 +162,19 @@ class TimeIndependentCounter(Counter):
         :return: lower and upper bound of confidence interval
         """
         # TODO Task 5.1.2: Your code goes here
-        pass
+        n = len(self.values)
+        mean_original = self.get_mean()
+        x = []
+        for i in range(resample_size):
+            sample_set = numpy.random.choice(self.values, n)
+            sample_mean = numpy.mean(sample_set)
+            x.append(sample_mean - mean_original)
+
+        lower_point = numpy.quantile(x, 1-alpha/2.0)
+        upper_point = numpy.quantile(x, alpha/2.0)
+        lower_endpoint = mean_original - lower_point
+        upper_endpoint = mean_original - upper_point
+        return lower_endpoint, upper_endpoint
 
     def is_in_bootstrap_confidence_interval(self, x, resample_size=5000, alpha=0.05):
         """
@@ -164,7 +185,11 @@ class TimeIndependentCounter(Counter):
         :return: true, if sample is in confidence interval
         """
         # TODO Task 5.1.2: Your code goes here
-        pass
+        points = self.report_bootstrap_confidence_interval(alpha, resample_size)
+        if points[0] <= x <= points[1]:
+            return True
+        else:
+            return False
 
 
 class TimeDependentCounter(Counter):
@@ -174,7 +199,6 @@ class TimeDependentCounter(Counter):
 
     Methods for calculating mean, variance and standard deviation are available.
     """
-
     def __init__(self, sim, name="default"):
         """
         Initialize TDC with the simulation it belongs to and the name.
